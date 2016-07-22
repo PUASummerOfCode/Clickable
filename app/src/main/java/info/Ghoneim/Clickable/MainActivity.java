@@ -5,11 +5,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
     Button myButton;
+    Button elzorar;
+    ImageView elsora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,5 +26,17 @@ public class MainActivity extends Activity {
                 Toast.makeText(MainActivity.this, "ma bora7a :@", Toast.LENGTH_SHORT).show();
             }
         });
+        elzorar=(Button)findViewById(R.id.elzorar);
+        elsora=(ImageView) findViewById(R.id.elsora);
+        elzorar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               elsora.setVisibility(view.VISIBLE);
+            }
+        });
+
+
+
+
     }
 }

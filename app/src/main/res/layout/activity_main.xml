@@ -22,4 +22,27 @@
         android:id="@+id/clickButton"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Talb Handsa 3'lban tal3 3enh"
+        android:id="@+id/elzorar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="1000dp"
+        android:background="@color/red"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/test"
+        android:id="@+id/elsora"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"/>
+
 </RelativeLayout>
