@@ -1,6 +1,7 @@
 package info.Ghoneim.Clickable;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,9 @@ public class MainActivity extends Activity {
     Button myButton;
     Button elzorar;
     ImageView elsora;
+
+    Button Next;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,17 @@ public class MainActivity extends Activity {
                elsora.setVisibility(view.VISIBLE);
             }
         });
+
+
+        Next=(Button)findViewById(R.id.next);
+        Next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(i);
+            }
+        });
+
 
 
 
